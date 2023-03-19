@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Hanken+Grotesk:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #ECF2F8;
+    padding: 71px 24px;
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.shadow {
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+.danielDiv {
+    background-color: #733FC8;
+    border-radius: 8px;
+    padding: 26px 32px 32px 32px;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0px right 24px;
+}
+
+.jonathanDiv {
+    padding: 26px 32px 32px 32px;
+    border-radius: 8px;
+    background-color: #48556A;
+}
+
+.jeanetteDiv, .kiraDiv {
+    padding: 26px 32px 32px 32px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.patrickDiv {
+    padding: 26px 32px 32px 32px;
+    border-radius: 8px;
+    background-color: #19202D;
+}
+
+.avatarBorder {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border: 2px solid #A775F1;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+
+.avatarName {
+    display: flex;
+    gap: 17px;
+}
+
+.nameColumn {
+    flex-direction: column;
+}
+
+.nameHeading {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.statusHeading {
+    font-size: 11px;
+    line-height: 11px;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+.bigParagraph {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+.smallParagraph {
+    font-size: 13px;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.lightColor {
+    color: #ECF2F8;
+}
+
+.secondLightColor {
+    color: #CFCFCF;
+}
+
+.darkColor {
+    color: #48556A;
+}
+
+.purpleGap {
+    margin-top: 40px;
+    padding-right: 16px;
+}
+
+.gapDiv {
+    margin-top: 24px;
+}
+
+.gap, .bigGap {
+    margin-top: 16px;
+}
+
+@media (min-width: 1440px) {
+    .mainDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divWraper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px ;
+    }
+
+    .gapDiv {
+        margin-top: 0;
+    }
+
+    .danielDiv {
+        width: 540px;
+        height: 282px;
+        background-position: top 0px right 80px;
+    }
+
+    .jonathanDiv {
+        width: 255px;
+        height: 282px;
+    }
+
+    .jeanetteDiv {
+        width: 255px;
+        height: 266px;
+    }
+
+    .patrickDiv {
+        width: 540px;
+        height: 266px;
+    }
+
+    .kiraDiv {
+        width: 255px;
+        height: 572px;
+    }
+
+    .gapDesktop, .bigGap {
+        margin-top: 24px;
+    }
+
+    .divLeft {
+        margin-right:  30px;
+    }
+
+    .purpleGap {
+       margin-top: 16px;
+    }
+}
