@@ -7,176 +7,148 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     width: 100vw;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: #ECF2F8;
     padding: 71px 24px;
-    font-family: 'Barlow Semi Condensed';
-    font-style: normal;
-    font-weight: 500;
-    color: #FFFFFF;
 }
 
-.shadow {
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 24px;
+    column-gap: 30px;
+}
+
+.card {
+    padding: 26px 32px 32px 32px;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
-}
-
-.danielDiv {
-    background-color: #733FC8;
     border-radius: 8px;
-    padding: 26px 32px 32px 32px;
-    background-image: url(./images/bg-pattern-quotation.svg);
-    background-repeat: no-repeat;
-    background-position: top 0px right 24px;
 }
 
-.jonathanDiv {
-    padding: 26px 32px 32px 32px;
-    border-radius: 8px;
-    background-color: #48556A;
+.author {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
 }
 
-.jeanetteDiv, .kiraDiv {
-    padding: 26px 32px 32px 32px;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-}
-
-.patrickDiv {
-    padding: 26px 32px 32px 32px;
-    border-radius: 8px;
-    background-color: #19202D;
-}
-
-.avatarBorder {
+.user {
+    border-radius: 50%;
     width: 28px;
-    height: 28px;
-    border-radius: 100%;
+}
+
+.user.border {
     border: 2px solid #A775F1;
 }
 
-.avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 100%;
-}
-
-.avatarName {
-    display: flex;
-    gap: 17px;
-}
-
-.nameColumn {
-    flex-direction: column;
-}
-
-.nameHeading {
+.name {
+    font-weight: 500;
     font-size: 13px;
     line-height: 13px;
+    color: #FFFFFF;
 }
 
-.statusHeading {
+.status {
+    font-weight: 500;
     font-size: 11px;
     line-height: 11px;
+    color: #FFFFFF;
     opacity: 0.5;
     margin-top: 4px;
 }
 
-.bigParagraph {
+.info {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    color: #FFFFFF;
     margin-top: 18px;
 }
 
-.smallParagraph {
+.description {
+    font-weight: 500;
     font-size: 13px;
     line-height: 18px;
-    opacity: 0.7;
-}
-
-.lightColor {
-    color: #ECF2F8;
-}
-
-.secondLightColor {
     color: #CFCFCF;
-}
-
-.darkColor {
-    color: #48556A;
-}
-
-.purpleGap {
-    margin-top: 40px;
-    padding-right: 16px;
-}
-
-.gapDiv {
-    margin-top: 24px;
-}
-
-.gap, .bigGap {
+    opacity: 0.7;
     margin-top: 16px;
 }
 
+.violetBackground {
+    background-color: #733FC8;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: top 0 right 24px;
+    background-repeat: no-repeat;
+}
+
+.grayBackground {
+    background-color: #48556A;
+}
+
+.whiteBackground {
+    background-color: #FFFFFF;
+}
+
+.blackBackground {
+    background-color: #19202D;
+}
+
+.whiteColor {
+    color: #FFFFFF;
+}
+
+.whiteColorPatrick {
+    color: #ECF2F8;
+}
+
+.grayColor {
+    color: #48556A;
+}
+
+.marginDaniel {
+    margin-top: 40px;
+}
+
+.paddingDaniel {
+    padding-right: 12px;
+}
+
 @media (min-width: 1440px) {
-    .mainDiv {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    body {
+        padding: 164px;
     }
 
-    .divWraper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        column-gap: 30px ;
+    .main {
+        grid-template-columns: repeat(4, 255px);
+        grid-template-rows: 282px 266px;
     }
 
-    .gapDiv {
-        margin-top: 0;
+    .violetBackground {
+        background-position: top 0 right 80px;
+        grid-column: 1/3;
     }
 
-    .danielDiv {
-        width: 540px;
-        height: 282px;
-        background-position: top 0px right 80px;
+    .blackBackground {
+        grid-column:  2/4;
     }
 
-    .jonathanDiv {
-        width: 255px;
-        height: 282px;
+    .kira {
+        grid-row: 1/3;
+        grid-column: 4/4;
     }
 
-    .jeanetteDiv {
-        width: 255px;
-        height: 266px;
+    .marginDaniel {
+        margin-top: 16px;
     }
 
-    .patrickDiv {
-        width: 540px;
-        height: 266px;
-    }
-
-    .kiraDiv {
-        width: 255px;
-        height: 572px;
-    }
-
-    .gapDesktop, .bigGap {
+    .marginMedium {
         margin-top: 24px;
     }
 
-    .divLeft {
-        margin-right:  30px;
-    }
-
-    .purpleGap {
-       margin-top: 16px;
+    .paddingDaniel {
+        padding-right: 0px;
     }
 }
